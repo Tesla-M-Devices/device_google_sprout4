@@ -3,6 +3,9 @@ $(call inherit-product, device/google/sprout4/sprout4.mk)
 # Common Tesla stuff
 $(call inherit-product, vendor/tesla/config/common_full_phone.mk)
 
+# For Optimization stuff
+$(call inherit-product, device/google/sprout4/optimization.mk)
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=6.0.1/MMB29K/2419427:user/release-keys PRIVATE_BUILD_DESC="sprout-user 6.0.1 MMB29K 2419427 release-keys"
 
 PRODUCT_NAME := tesla_sprout4
